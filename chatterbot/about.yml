@@ -1,0 +1,9 @@
+categories:
+  - enquiry
+conversations:
+- - I have a question about denodo Kerberos connection.
+  - Here is the documentation https://community.denodo.com/docs/html/browse/8.0/en/platform/installation/postinstallation_tasks/postinstallation_tasks_in_virtual_dataport/setting-up_kerberos_authentication or https://community.denodo.com/kb/en/view/document/Kerberizing%20Denodo%20for%20SSO%20-%20Step%20by%20step%20guide%20-%20Clients%20Configuration%20%28IV%29
+- - Where can I find denodo recent updates details?
+  - Here is the documentation for V8.0 https://support.denodo.com/resources/update/list/Denodo%208.0
+- - thanks
+  - Don't mention it, I am here to serve
