@@ -1,0 +1,725 @@
+<?xml version="1.0"?>
+<add>
+<doc>
+ <field name="topic"> https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/install_denodo4e/install_denodo4e#installing-denodo4eclipse-plugin</field><field name="content">
+  instal denodo4eclipse plugin note denodo4eclipse plugin deprecate remove future major version denodo platform
+  section denodo4eclipse plugin upgrade guide provide detail alternative plugin
+  install denodo4e plug eclipse follow step install denodo platform local machine plugin depend library include client installation
+  obtain complete installation install denodo express request installer license denodo administrator organization
+  note denodo express able develop debug type custom component vdp custom wrapper
+  denodo express develop vdp custom wrapper debug
+  configure eclipse run java 11
+  important plugin start version java
+  open eclipse click menu help 
+  install new software
+  click button add click local
+  dialog select folder file denodo_home/tool denodo4e updatesite click ok
+  enter new update site e.g. denodo click ok
+  configure local repository denodo 4e select denodo4e locate denodo technology category
+  select check box contact update site install find require software
+  click
+  eclipse finish calculate dependency click finish begin installation process
+  require feature instal restart eclipse 
+  plug test version eclipse eclipse neon 4.6 eclipse oxygen 4.7
+  instal denodo4eclipse plugin
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/install_denodo4e/install_denodo4e#id1</field><field name="content">
+  configure local repository denodo 4e
+  id1
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#vdp-itp-server-tutorial</field><field name="content">
+  vdp itp server tutorial tutorial learn use denodo4e create debug deploy custom store procedure virtual dataport
+  note denodo4eclipse plugin deprecate remove future major version denodo platform
+  section denodo4eclipse plugin upgrade guide provide detail alternative plugin
+  create extension project custom store procedure create denodo extension project vdp store procedure
+  step 1 launch eclipse click menu file new project
+  select denodo extension project category denodo4e click
+  new denodo extension project wizard provide value project store procedure jre select jre version 8
+  version jre denodo run
+  click
+  step 2 enter value denodo platform home directory directory local installation denodo e.g. c:\\denodo\\denodoplatform8.0
+  denodo application select denodo vdp itp server
+  extension configuration extension select denodo vdp store procedure
+  package enter com.denodo.test.extension enter customstoredprocedure
+  new denodo extension project wizard click finish
+  new project store procedure
+  new project contain class customstoredprocedure package com.denodo.test.extension
+  classpath project include library necessary develop custom store procedure
+  project contain denodo extension
+  add use denodo extension wizard
+  create debug configuration vdp itp server vdp administration tool time debug extension set denodo4e configuration
+  click menu run denodo4e
+  debug configuration denodo4e debug configuration
+  denodo4e configuration 
+  click apply configuration launch vdp administration tool create
+  denodo4e configuration start vdp itp server debug mode vdp itp server configuration click debug launch vdp server debug mode link store procedure project project depend eclipse project external jar file support dependency detail
+  open debug perspective menu window 
+  open perspective debug like debug perspective click terminate close debug session stop virtual dataport server
+  click disconnect close debug session leave virtual dataport server run
+  debug store procedure denodo4e configuration dialog select denodo vdp administration tool click debug launch vdp administration tool
+  tool start log file new store procedure
+  enter value field enter com.acme.extension
+  customstoredprocedure field class parameter
+  develop custom wrapper process similar menu file new 
+  datum source custom
+  hand custom function need import available
+  click ok create store procedure
+  virtual dataport administration tool new store procedure wizard virtual dataport administration tool new store procedure wizard eclipse set breakpoint docall method customstoredprocedure class
+  administration tool click execute set integer value number parameter input value define template store procedure click ok
+  execution interrupt eclipse display debug information
+  debug perspective use feature available eclipse debugger include hot code replacement debug store procedure
+  example replace line 89 90 docall method follow code save change getprocedureresultset().addrow(new object new long(1234 resume execution
+  vdp administration tool like virtual dataport administration tool store procedure tab deploy store procedure functional store procedure deploy server
+  stop vdp itp server vdp administration tool launch eclipse
+  open denodo platform control center launch server administration tool step necessary deploy use test scenario
+  eclipse open contextual menu store procedure project click deploy extension open deploy wizard deploy wizard detail
+  configure wizard screenshot click finish need change value adapt configuration
+  deploy denodo extension deployment process vdp administration tool click menu file refresh
+  new store procedure leave tree deployedstoredprocedure
+  double click configuration detail execute
+  virtual dataport administration tool store procedure tab note store procedure create debug process myfirststoredprocedure able configuration detail execute start server eclipse denodo4e configuration create tutorial
+  development new store procedure want drop myfirststoredprocedure
+  vdp itp server tutorial
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#creating-an-extension-project-with-a-custom-stored-procedure</field><field name="content">
+  create extension project custom store procedure create denodo extension project vdp store procedure
+  step 1 launch eclipse click menu file new project
+  select denodo extension project category denodo4e click
+  new denodo extension project wizard provide value project store procedure jre select jre version 8
+  version jre denodo run
+  click
+  step 2 enter value denodo platform home directory directory local installation denodo e.g. c:\\denodo\\denodoplatform8.0
+  denodo application select denodo vdp itp server
+  extension configuration extension select denodo vdp store procedure
+  package enter com.denodo.test.extension enter customstoredprocedure
+  new denodo extension project wizard click finish
+  new project store procedure
+  new project contain class customstoredprocedure package com.denodo.test.extension
+  classpath project include library necessary develop custom store procedure
+  project contain denodo extension
+  add use denodo extension wizard
+  create extension project custom store procedure
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#id1</field><field name="content">
+  new denodo extension project wizard
+  id1
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#id2</field><field name="content">
+  new denodo extension project wizard
+  id2
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#creating-debug-configurations-for-the-vdp-itp-server-and-the-vdp-administration-tool</field><field name="content">
+  create debug configuration vdp itp server vdp administration tool time debug extension set denodo4e configuration
+  click menu run denodo4e
+  debug configuration denodo4e debug configuration
+  denodo4e configuration 
+  click apply configuration launch vdp administration tool create denodo4e configuration
+  create debug configuration vdp itp server vdp administration tool
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#id3</field><field name="content">
+  denodo4e configuration
+  id3
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#id4</field><field name="content">
+  denodo4e configuration
+  id4
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#starting-the-vdp-itp-server-in-debug-mode</field><field name="content">
+  start vdp itp server debug mode vdp itp server configuration click debug launch vdp server debug mode link store procedure project project depend eclipse project external jar file support dependency detail
+  open debug perspective menu window 
+  open perspective debug like debug perspective click terminate close debug session stop virtual dataport server
+  click disconnect close debug session leave virtual dataport server run
+  start vdp itp server debug mode
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#id5</field><field name="content">
+  debug perspective
+  id5
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#debugging-the-stored-procedure</field><field name="content">
+  debug store procedure denodo4e configuration dialog select denodo vdp administration tool click debug launch vdp administration tool
+  tool start log file new store procedure
+  enter value field enter com.acme.extension
+  customstoredprocedure field class parameter
+  develop custom wrapper process similar menu file new 
+  datum source custom
+  hand custom function need import available
+  click ok create store procedure
+  virtual dataport administration tool new store procedure wizard virtual dataport administration tool new store procedure wizard eclipse set breakpoint docall method customstoredprocedure class
+  administration tool click execute set integer value number parameter input value define template store procedure click ok
+  execution interrupt eclipse display debug information
+  debug perspective use feature available eclipse debugger include hot code replacement debug store procedure
+  example replace line 89 90 docall method follow code save change getprocedureresultset().addrow(new object new long(1234 resume execution
+  vdp administration tool like virtual dataport administration tool store procedure tab
+  debug store procedure
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#id6</field><field name="content">
+  virtual dataport administration tool new store procedure wizard
+  id6
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#id7</field><field name="content">
+  virtual dataport administration tool new store procedure wizard
+  id7
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#id8</field><field name="content">
+  debug perspective
+  id8
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#id9</field><field name="content">
+  virtual dataport administration tool store procedure tab
+  id9
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#deploying-the-stored-procedure</field><field name="content">
+  deploy store procedure functional store procedure deploy server
+  stop vdp itp server vdp administration tool launch eclipse
+  open denodo platform control center launch server administration tool step necessary deploy use test scenario
+  eclipse open contextual menu store procedure project click deploy extension open deploy wizard deploy wizard detail
+  configure wizard screenshot click finish need change value adapt configuration
+  deploy denodo extension deployment process vdp administration tool click menu file refresh
+  new store procedure leave tree deployedstoredprocedure
+  double click configuration detail execute
+  virtual dataport administration tool store procedure tab note store procedure create debug process myfirststoredprocedure able configuration detail execute start server eclipse denodo4e configuration create tutorial
+  development new store procedure want drop myfirststoredprocedure
+  deploy store procedure
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#id10</field><field name="content">
+  deploy denodo extension
+  id10
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/vdp_itp_server_tutorial/vdp_itp_server_tutorial#id11</field><field name="content">
+  virtual dataport administration tool store procedure tab
+  id11
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#wrapper-generation-tool-tutorial</field><field name="content">
+  wrapper generation tool tutorial 
+  tutorial learn create deploy debug itpilot custom function denodo4e wrapper generation tool
+  note denodo4eclipse plugin deprecate remove future major version denodo platform
+  section denodo4eclipse plugin upgrade guide provide detail alternative plugin
+  create extension project itpilot custom function create denodo extension project contain new itpilot custom function wizard include denodo4e follow step click menu file new project
+  look category denodo4e select denodo extension project click
+  wizard provide project itp custom function jre select jre version 8
+  version wrapper generation tool
+  new denodo extension project wizard click proceed wizard second page
+  configure second page follow value denodo platform home directory directory local installation denodo platform e.g. c:\\denodo\\denodoplatform8.0
+  denodo application select denodo wrapper generation tool
+  extension configuration extension select denodo itpilot custom function
+  package enter com.acme.extension enter customitpfunction
+  new denodo extension project wizard click finish
+  new project store procedure
+  new project contain class customitpfunction package com.acme.extension configure
+  classpath project include library necessary develop itpilot custom function
+  project contain denodo extension
+  add use denodo extension wizard
+  create debug configuration wrapper generation tool time debug extension itpilot set denodo4e configuration 
+  follow step click menu
+  run denodo4e
+  debug configuration denodo4e debug configuration
+  click button new launch configuration fill dialog screenshot
+  denodo4e configuration debug itpilot custom function start wrapper generation tool click debug launch wrapper generation tool debug mode link itp custom function project project depend eclipse project external jar file support dependency detail
+  open debug perspective menu window 
+  open perspective debug like debug perspective click terminate close debug session stop wrapper generation tool
+  click disconnect close debug session leave wrapper generation tool run
+  debug custom function create new process wrapper generation tool
+  create expression component open editor write expression involve itpilot custom function include itp custom function
+  example follow screenshot expression editor eclipse open source file customitpfunction class set breakpoint execute method
+  expression editor wrapper generation tool click test
+  execution interrupt eclipse display debug information
+  debug perspective use feature available eclipse debugger include hot code replacement debug custom function
+  example replace execute method code follow save change resume execution
+  wrapper generation tool like expression editor deploy custom function work itpilot custom function deploy wrapper generation tool
+  need stop wrapper generation tool new extension detect tool restart run deploy jar contain
+  eclipse right click project itp custom function project 
+  deploy extension open deploy wizard
+  configure wizard screenshot click finish
+  deploy denodo extension open denodo platform control center launch wrapper generation tool
+  tool extension new jar contain custom function
+  instal extension
+  wrapper generation tool tutorial
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#creating-an-extension-project-with-an-itpilot-custom-function</field><field name="content">
+  create extension project itpilot custom function create denodo extension project contain new itpilot custom function wizard include denodo4e follow step click menu file new project
+  look category denodo4e select denodo extension project click
+  wizard provide project itp custom function jre select jre version 8
+  version wrapper generation tool
+  new denodo extension project wizard click proceed wizard second page
+  configure second page follow value denodo platform home directory directory local installation denodo platform e.g. c:\\denodo\\denodoplatform8.0
+  denodo application select denodo wrapper generation tool
+  extension configuration extension select denodo itpilot custom function
+  package enter com.acme.extension enter customitpfunction
+  new denodo extension project wizard click finish
+  new project store procedure
+  new project contain class customitpfunction package com.acme.extension configure
+  classpath project include library necessary develop itpilot custom function
+  project contain denodo extension
+  add use denodo extension wizard
+  create extension project itpilot custom function
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#id1</field><field name="content">
+  new denodo extension project wizard
+  id1
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#id2</field><field name="content">
+  new denodo extension project wizard
+  id2
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#creating-a-debug-configuration-for-the-wrapper-generation-tool</field><field name="content">
+  create debug configuration wrapper generation tool time debug extension itpilot set denodo4e configuration 
+  follow step click menu
+  run denodo4e
+  debug configuration denodo4e debug configuration
+  click button new launch configuration fill dialog screenshot
+  denodo4e configuration debug itpilot custom function
+  create debug configuration wrapper generation tool
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#id3</field><field name="content">
+  denodo4e configuration debug itpilot custom function
+  id3
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#starting-the-wrapper-generation-tool</field><field name="content">
+  start wrapper generation tool click debug launch wrapper generation tool debug mode link itp custom function project project depend eclipse project external jar file support dependency detail
+  open debug perspective menu window 
+  open perspective debug like debug perspective click terminate close debug session stop wrapper generation tool
+  click disconnect close debug session leave wrapper generation tool run
+  start wrapper generation tool
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#id4</field><field name="content">
+  debug perspective
+  id4
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#debugging-the-custom-function</field><field name="content">
+  debug custom function create new process wrapper generation tool
+  create expression component open editor write expression involve itpilot custom function include itp custom function
+  example follow screenshot expression editor eclipse open source file customitpfunction class set breakpoint execute method
+  expression editor wrapper generation tool click test
+  execution interrupt eclipse display debug information
+  debug perspective use feature available eclipse debugger include hot code replacement debug custom function
+  example replace execute method code follow save change resume execution
+  wrapper generation tool like expression editor
+  debug custom function
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#id5</field><field name="content">
+  expression editor
+  id5
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#id6</field><field name="content">
+  debug perspective
+  id6
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#id7</field><field name="content">
+  expression editor
+  id7
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#deploying-the-custom-function</field><field name="content">
+  deploy custom function work itpilot custom function deploy wrapper generation tool
+  need stop wrapper generation tool new extension detect tool restart run deploy jar contain
+  eclipse right click project itp custom function project 
+  deploy extension open deploy wizard
+  configure wizard screenshot click finish
+  deploy denodo extension open denodo platform control center launch wrapper generation tool
+  tool extension new jar contain custom function
+  instal extension
+  deploy custom function
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#id8</field><field name="content">
+  deploy denodo extension
+  id8
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/wrapper_generation_tool_tutorial/wrapper_generation_tool_tutorial#id9</field><field name="content">
+  instal extension
+  id9
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/create/denodo_extension_project_wizard/denodo_extension_project_wizard#the-denodo-extension-project-wizard</field><field name="content">
+  denodo extension project wizard denodo4e provide wizard create denodo application extension
+  open denodo extension project wizard click menu file new project
+  wizard denodo4e category
+  new project wizard 
+  wizard divide page enter different parameter create denodo extension project
+  page page enter follow parameter project jre select jre version run select denodo application jre distribute denodo platform 1.8
+  work set set require parameter second page click finish create new project configuration need
+  case press navigate page
+  second page follow parameter configure second page denodo platform home directory enter denodo platform installation directory
+  browse button convenience directory type manually
+  installation directory add new project classpath require library require library depend select extension type
+  library available denodo platform installation support extension type detail
+  denodo application denodo vdp itp server denodo aracne scheduler server denodo wrapper generation tool
+  extension configuration extension parameter allow specify type denodo extension create project
+  different type available accord select denodo application support extension type detail
+  depend select extension type different template java meta information file generate new project
+  package parameter necessary configure java meta information file generate
+  generate extension template class configure generate meta information file
+  page page java build path page java project wizard new java project wizard information
+  configuration work new denodo extension project create package explorer
+  package explorer use denodo extension wizard add new extension exist denodo extension project
+  denodo extension project wizard
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/create/denodo_extension_project_wizard/denodo_extension_project_wizard#id1</field><field name="content">
+  new project wizard
+  id1
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/create/denodo_extension_project_wizard/denodo_extension_project_wizard#the-first-page</field><field name="content">
+  page page enter follow parameter project jre select jre version run select denodo application jre distribute denodo platform 1.8
+  work set set require parameter second page click finish create new project configuration need
+  case press navigate page
+  page
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/create/denodo_extension_project_wizard/denodo_extension_project_wizard#the-second-page</field><field name="content">
+  second page follow parameter configure second page denodo platform home directory enter denodo platform installation directory
+  browse button convenience directory type manually
+  installation directory add new project classpath require library require library depend select extension type
+  library available denodo platform installation support extension type detail
+  denodo application denodo vdp itp server denodo aracne scheduler server denodo wrapper generation tool
+  extension configuration extension parameter allow specify type denodo extension create project
+  different type available accord select denodo application support extension type detail
+  depend select extension type different template java meta information file generate new project
+  package parameter necessary configure java meta information file generate
+  generate extension template class configure generate meta information file
+  second page
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/create/denodo_extension_project_wizard/denodo_extension_project_wizard#the-third-page</field><field name="content">
+  page page java build path page java project wizard new java project wizard information
+  configuration work new denodo extension project create package explorer
+  package explorer use denodo extension wizard add new extension exist denodo extension project
+  page
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/create/denodo_extension_project_wizard/denodo_extension_project_wizard#id2</field><field name="content">
+  package explorer
+  id2
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/create/denodo_extension_wizard/denodo_extension_wizard#the-denodo-extension-wizard</field><field name="content">
+  denodo extension wizard denodo4e provide wizard add new extension exist denodo extension project
+  open wizard click menu file new 
+  find wizard denodo4e category
+  new project wizard 2 support project type new extension add denodo extension project contain extension vdp itp server wrapper generation tool extension project allow case aracne scheduler
+  wizard configuration denodo extension wizard consist page follow parameter configure extension parameter allow specify type denodo extension add select project
+  different type available depend select project contain extension vdp itp server wrapper generation tool support extension type detail
+  package package new extension add
+  click browse select package contain select project manually type package
+  generate extension template class
+  new denodo extension wizard configuration work click finish new extension add select project
+  note new dependency automatically add project classpath necessary require library denodo platform home directory configure select project
+  example add new store procedure project contain vdp custom function new library add project classpath
+  denodo extension wizard
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/create/denodo_extension_wizard/denodo_extension_wizard#id1</field><field name="content">
+  new project wizard 2
+  id1
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/create/denodo_extension_wizard/denodo_extension_wizard#supported-project-types</field><field name="content">
+  support project type new extension add denodo extension project contain extension vdp itp server wrapper generation tool extension project allow case aracne scheduler
+  support project type
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/create/denodo_extension_wizard/denodo_extension_wizard#wizard-configuration</field><field name="content">
+  wizard configuration denodo extension wizard consist page follow parameter configure extension parameter allow specify type denodo extension add select project
+  different type available depend select project contain extension vdp itp server wrapper generation tool support extension type detail
+  package package new extension add
+  click browse select package contain select project manually type package
+  generate extension template class
+  new denodo extension wizard configuration work click finish new extension add select project
+  note new dependency automatically add project classpath necessary require library denodo platform home directory configure select project
+  example add new store procedure project contain vdp custom function new library add project classpath
+  wizard configuration
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/create/denodo_extension_wizard/denodo_extension_wizard#id2</field><field name="content">
+  new denodo extension wizard
+  id2
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/denodo_application_debug_configuration/denodo_application_debug_configuration#denodo-application-debug-configuration</field><field name="content">
+  denodo application debug configuration denodo4e add new type debug configuration eclipse denodo application allow debug extension denodo server application run debug detail launch debug configuration
+  variant denodo application debug configuration type depend denodo application debug vdp itp server scheduler server
+  wrapper generation tool
+  vdp administration tool browser pool verification index search engine server
+  access denodo4e configuration dialog click
+  run denodo4e
+  debug configuration denodo4e configuration denodo4e configuration option denodo4e pull button debug toolbar 
+  denodo run menu denodo4e dialog wrapper generation tool vdp itp aracne scheduler server follow option available denodo application tab select application vdp itp aracne scheduler server wrapper generation tool denodo platform home directory specify denodo platform installation directory
+  browse button convenience directory type manually
+  application use combo box select denodo application launch debug project extension debug list eclipse project link select denodo application launch
+  click add add denodo extension project eclipse project list click remove remove select project list
+  debug port port receive debug information java virtual machine denodo application launch
+  free port number
+  note common tab screenshot common eclipse launch debug configuration type create java application launch configuration information
+  select application vdp itp aracne scheduler server possible create auxiliary debug configuration
+  useful need run denodo application debug particular extension
+  example need run vdp itp server scheduler server order test debug custom exporter
+  follow auxiliary debug configuration create depend select application vdp itp server vdp administration tool browser pool server verification server aracne server vdp itp server scheduler server index search engine server browser pool server scheduler server vdp itp server aracne server index search engine server browser pool server auxiliary debug configuration 
+  require auxiliary configuration create press apply debug
+  new configuration inherit relevant parameter main configuration automatically
+  configuration parameter edit necessary
+  vdp administration tool browser pool verification index search engine server debug configuration 
+  case denodo platform home directory application parameter available
+  vdp administration tool browser pool verification index search engine server extensible option necessary case
+  include convenience
+  example vdp itp server instance launch denodo4e instead open denodo platform control center launch vdp administration tool easy debug configuration vdp administration tool launch eclipse
+  consideration 
+  possible add new class denodo extension project debug long belong package exist denodo application debug configuration launch
+  debug extension deploy deploy wizard detail result obtain execute extension correspond eclipse workspace version extension
+  debug itpilot custom function vdp custom function vdp custom policy support extension type detail
+  eclipse warning like screenshot hot code replacement
+  limitation jvm
+  happen click continue change active execution update method
+  obsolete method warn additional resource 
+  support denodo application support extension type support dependency
+  denodo application debug configuration
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/denodo_application_debug_configuration/denodo_application_debug_configuration#id1</field><field name="content">
+  denodo run menu
+  id1
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/denodo_application_debug_configuration/denodo_application_debug_configuration#id2</field><field name="content">
+  denodo4e dialog
+  id2
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/denodo_application_debug_configuration/denodo_application_debug_configuration#wrapper-generation-tool-and-the-vdp-itp-aracne-and-scheduler-servers</field><field name="content">
+  wrapper generation tool vdp itp aracne scheduler server follow option available denodo application tab select application vdp itp aracne scheduler server wrapper generation tool denodo platform home directory specify denodo platform installation directory
+  browse button convenience directory type manually
+  application use combo box select denodo application launch debug project extension debug list eclipse project link select denodo application launch
+  click add add denodo extension project eclipse project list click remove remove select project list
+  debug port port receive debug information java virtual machine denodo application launch
+  free port number
+  note common tab screenshot common eclipse launch debug configuration type create java application launch configuration information
+  select application vdp itp aracne scheduler server possible create auxiliary debug configuration
+  useful need run denodo application debug particular extension
+  example need run vdp itp server scheduler server order test debug custom exporter
+  follow auxiliary debug configuration create depend select application vdp itp server vdp administration tool browser pool server verification server aracne server vdp itp server scheduler server index search engine server browser pool server scheduler server vdp itp server aracne server index search engine server browser pool server auxiliary debug configuration 
+  require auxiliary configuration create press apply debug
+  new configuration inherit relevant parameter main configuration automatically
+  configuration parameter edit necessary
+  wrapper generation tool vdp itp aracne scheduler server
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/denodo_application_debug_configuration/denodo_application_debug_configuration#id3</field><field name="content">
+  auxiliary debug configuration
+  id3
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/denodo_application_debug_configuration/denodo_application_debug_configuration#vdp-administration-tool-and-the-browser-pool-verification-and-index-search-engine-servers</field><field name="content">
+  vdp administration tool browser pool verification index search engine server debug configuration 
+  case denodo platform home directory application parameter available
+  vdp administration tool browser pool verification index search engine server extensible option necessary case
+  include convenience
+  example vdp itp server instance launch denodo4e instead open denodo platform control center launch vdp administration tool easy debug configuration vdp administration tool launch eclipse
+  vdp administration tool browser pool verification index search engine server
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/denodo_application_debug_configuration/denodo_application_debug_configuration#id4</field><field name="content">
+  debug configuration
+  id4
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/denodo_application_debug_configuration/denodo_application_debug_configuration#other-considerations</field><field name="content">
+  consideration possible add new class denodo extension project debug long belong package exist denodo application debug configuration launch
+  debug extension deploy deploy wizard detail result obtain execute extension correspond eclipse workspace version extension
+  debug itpilot custom function vdp custom function vdp custom policy support extension type detail
+  eclipse warning like screenshot hot code replacement
+  limitation jvm
+  happen click continue change active execution update method
+  obsolete method warn
+  consideration
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/denodo_application_debug_configuration/denodo_application_debug_configuration#id5</field><field name="content">
+  obsolete method warn
+  id5
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/denodo_application_debug_configuration/denodo_application_debug_configuration#additional-resources</field><field name="content">
+  additional resource support denodo application support extension type support dependency
+  additional resource
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/supported_denodo_applications/supported_denodo_applications#supported-denodo-applications</field><field name="content">
+  support denodo application follow denodo application launch eclipse denodo4e account available denodo platform installation vdp itp server aracne server scheduler server wrapper generation tool vdp administration tool browser pool server verification server index search engine server application extend include convenience vdp administration tool browser pool server verification server index search engine server
+  different configuration option available depend denodo application select
+  detail "topic" denodo application debug configuration section
+  support denodo application
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/support_for_dependencies/support_for_dependencies#support-for-dependencies</field><field name="content">
+  support dependency eclipse project link denodo application particular debug configuration denodo application debug configuration information dependency
+  dependency eclipse project external jar file automatically link select denodo application necessary class find runtime
+  support dependency
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/debug_remote_applications/debug_remote_applications#debug-remote-applications</field><field name="content">
+  debug remote application denodo4e design debug extension run local denodo server
+  possible debug extension deploy remote denodo server follow step detail
+  remote machine enable debug mode denodo server
+  way follow example port 8100 debug port free port remote machine
+  add follow line assign value variable denodo4e_debug_conf beginning server startup script set denodo4e_debug_conf=-xdebug -xrunjdwp transport = dt_socket server = y suspend = n address=8100 window denodo4e_debug_conf=-xdebug -xrunjdwp transport = dt_socket server = y suspend = n address=8100 unix linux  startup script denodo server server script change window
+  script change unix linux vdp itp server denodo_home%\\bin\\vqlserver.bat $ denodo_home bin vqlserver.sh scheduler server denodo_home%\\bin\\schedulerserver.bat $ denodo_home bin schedulerserver.sh note way server script modify start debug mode
+  note want execute server debug mode time specify different debug port
+  set follow environment variable denodo4e_debug_conf=-xdebug -xrunjdwp transport = dt_socket server = y suspend = n address=8100 note environment variable share denodo platform server tool
+  set variable start desire server want start server tool want start debug mode remove environment variable
+  want start debug mode time set new value environment variable different debug port
+  start server denodo platform control center modify startup script
+  local machine deploy extension want debug remote server deploy wizard
+  click run debug configuration double click remote java application
+  connect tab select standard socket attach connection type enter host remote server run debug port configure variable denodo4e_debug_conf start server
+  source tab add project contain source extension debug
+  set breakpoint source code server stop execution reach point
+  able control extension execution step step perform change run time local eclipse
+  final consideration important disable debug mode server debug capability long need
+  depend way start server debug mode remove comment definition variable denodo4e_debug_conf server startup script remove environment variable denodo4e_debug_conf restart server
+  change perform source code extension run time debug persistent
+  invalidate server stop
+  change persistent deploy extension
+  debug extension server simultaneously specify different debug port server create debug configuration eclipse launch configuration simultaneously
+  debug remote application
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/debug_remote_applications/debug_remote_applications#on-the-remote-machine</field><field name="content">
+  remote machine enable debug mode denodo server
+  way follow example port 8100 debug port free port remote machine
+  add follow line assign value variable denodo4e_debug_conf beginning server startup script set denodo4e_debug_conf=-xdebug -xrunjdwp transport = dt_socket server = y suspend = n address=8100 window denodo4e_debug_conf=-xdebug -xrunjdwp transport = dt_socket server = y suspend = n address=8100 unix linux  startup script denodo server server script change window
+  script change unix linux vdp itp server denodo_home%\\bin\\vqlserver.bat $ denodo_home bin vqlserver.sh scheduler server denodo_home%\\bin\\schedulerserver.bat $ denodo_home bin schedulerserver.sh note way server script modify start debug mode
+  note want execute server debug mode time specify different debug port
+  set follow environment variable denodo4e_debug_conf=-xdebug -xrunjdwp transport = dt_socket server = y suspend = n address=8100 note environment variable share denodo platform server tool
+  set variable start desire server want start server tool want start debug mode remove environment variable
+  want start debug mode time set new value environment variable different debug port
+  start server denodo platform control center modify startup script
+  remote machine
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/debug_remote_applications/debug_remote_applications#on-the-local-machine</field><field name="content">
+  local machine deploy extension want debug remote server deploy wizard
+  click run debug configuration double click remote java application
+  connect tab select standard socket attach connection type enter host remote server run debug port configure variable denodo4e_debug_conf start server
+  source tab add project contain source extension debug
+  set breakpoint source code server stop execution reach point
+  able control extension execution step step perform change run time local eclipse
+  local machine
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/debug/debug_remote_applications/debug_remote_applications#final-considerations</field><field name="content">
+  final consideration important disable debug mode server debug capability long need
+  depend way start server debug mode remove comment definition variable denodo4e_debug_conf server startup script remove environment variable denodo4e_debug_conf restart server
+  change perform source code extension run time debug persistent
+  invalidate server stop
+  change persistent deploy extension
+  debug extension server simultaneously specify different debug port server create debug configuration eclipse launch configuration simultaneously
+  final consideration
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/deploy/deploy_wizard/deploy_wizard#the-deploy-wizard</field><field name="content">
+  deploy wizard denodo4e provide wizard deploy denodo extension project correspond server wrapper generation tool denodo extension project wizard information denodo extension project
+  start deploy wizard open contextual menu denodo extension project click deploy extension note option appear menu denodo extension project select
+  deploy extension option deploying extension vdp itp server configuration pass wizard deploy denodo extension project
+  case project contain extension vdp itp server follow parameter configure denodo vdp itp server configuration host host server run localhost default
+  port port server run 9999 default
+  database server database extension deploy admin default
+  login login access server admin default
+  password password provide login
+  extension deployment set replace extension exist check wish overwrite exist extension necessary
+  follow property include generate jar manifest extension management purpose
+  mandatory extension jar jar file generate contain extension
+  note jar available connect database vdp server create store procedure custom wrapper view use custom function database
+  extension jar description optional description extension contain project
+  extension jar version optional version extension jar
+  extension jar target vdp version optional minimum require vdp version extension jar
+  vdp check require version deployment perform server version old require
+  extension jar target vdp update optional minimum require vdp update extension jar
+  vdp check require update number deployment perform server late update old require
+  extension jar website optional website additional information extension include project
+  extension list extension contain project deploy
+  case store procedure custom wrapper possible create default choice
+  choose create store procedure custom wrapper manually create later example vdp administration tool necessary class available deploy jar
+  vdp itp custom function available deploy generate jar file necessary configuration
+  follow screenshot deploy wizard denodo extension project contain store procedure deploy denodo extension wizard possible denodo extension project contain extension vdp itp server store procedure custom wrapper custom policy custom input filter vdp itp custom function wrapper generation tool itp custom function pack jar
+  denodo extension wizard information add extension denodo extension project
+  screenshot deploy wizard denodo extension project contain extension vdp itp server  deploy denodo extension wizard deploying extension scheduler server configuration need deploy denodo extension project scheduler server case project contain extension denodo scheduler server configuration host host server run localhost default
+  port port server run 8000 default
+  login login access server admin default
+  password password provide login
+  extension deployment set replace extension exist check wish overwrite exist extension necessary
+  extension jar file jar file generate contain extension
+  deploy denodo extension wizard deploying extension wrapper generation tool configuration parameter require deploy jar itpilot custom function wrapper generation tool denodo platform home directory specify denodo platform installation directory
+  browse button convenience directory type manually
+  extension deployment set replace extension exist check wish overwrite exist jar file necessary
+  extension jar file jar file generate contain itpilot custom function
+  extension list itpilot custom function contain project deploy
+  deploy denodo extension wizard final step finish configure deploy wizard click finish deploy select project corresponding server run wrapper generation tool
+  case new extension detect tool restart run
+  note deploy project dependency automatically add denodo extension project wizard project create copy folder denodo_home/extension thirdparty lib
+  case dependency eclipse project export jar file copy denodo_home/extension thirdparty lib
+  deploy wizard
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/deploy/deploy_wizard/deploy_wizard#id1</field><field name="content">
+  deploy extension option
+  id1
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/deploy/deploy_wizard/deploy_wizard#deploying-extensions-into-the-vdp-itp-server</field><field name="content">
+  deploy extension vdp itp server configuration pass wizard deploy denodo extension project
+  case project contain extension vdp itp server follow parameter configure denodo vdp itp server configuration host host server run localhost default
+  port port server run 9999 default
+  database server database extension deploy admin default
+  login login access server admin default
+  password password provide login
+  extension deployment set replace extension exist check wish overwrite exist extension necessary
+  follow property include generate jar manifest extension management purpose
+  mandatory extension jar jar file generate contain extension
+  note jar available connect database vdp server create store procedure custom wrapper view use custom function database
+  extension jar description optional description extension contain project
+  extension jar version optional version extension jar
+  extension jar target vdp version optional minimum require vdp version extension jar
+  vdp check require version deployment perform server version old require
+  extension jar target vdp update optional minimum require vdp update extension jar
+  vdp check require update number deployment perform server late update old require
+  extension jar website optional website additional information extension include project
+  extension list extension contain project deploy
+  case store procedure custom wrapper possible create default choice
+  choose create store procedure custom wrapper manually create later example vdp administration tool necessary class available deploy jar
+  vdp itp custom function available deploy generate jar file necessary configuration
+  follow screenshot deploy wizard denodo extension project contain store procedure deploy denodo extension wizard possible denodo extension project contain extension vdp itp server store procedure custom wrapper custom policy custom input filter vdp itp custom function wrapper generation tool itp custom function pack jar
+  denodo extension wizard information add extension denodo extension project
+  screenshot deploy wizard denodo extension project contain extension vdp itp server  deploy denodo extension wizard
+  deploy extension vdp itp server
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/deploy/deploy_wizard/deploy_wizard#id2</field><field name="content">
+  deploy denodo extension wizard
+  id2
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/deploy/deploy_wizard/deploy_wizard#id3</field><field name="content">
+  deploy denodo extension wizard
+  id3
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/deploy/deploy_wizard/deploy_wizard#deploying-extensions-into-the-scheduler-server</field><field name="content">
+  deploy extension scheduler server 
+  configuration need deploy denodo extension project scheduler server case project contain extension denodo scheduler server configuration host host server run localhost default
+  port port server run 8000 default
+  login login access server admin default
+  password password provide login
+  extension deployment set replace extension exist check wish overwrite exist extension necessary
+  extension jar file jar file generate contain extension
+  deploy denodo extension wizard
+  deploy extension scheduler server
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/deploy/deploy_wizard/deploy_wizard#id4</field><field name="content">
+  deploy denodo extension wizard
+  id4
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/deploy/deploy_wizard/deploy_wizard#deploying-extensions-into-the-wrapper-generation-tool</field><field name="content">
+  deploy extension wrapper generation tool configuration parameter require deploy jar itpilot custom function wrapper generation tool denodo platform home directory specify denodo platform installation directory
+  browse button convenience directory type manually
+  extension deployment set replace extension exist check wish overwrite exist jar file necessary
+  extension jar file jar file generate contain itpilot custom function
+  extension list itpilot custom function contain project deploy
+  deploy denodo extension wizard
+  deploy extension wrapper generation tool
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/deploy/deploy_wizard/deploy_wizard#id5</field><field name="content">
+  deploy denodo extension wizard
+  id5
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/deploy/deploy_wizard/deploy_wizard#final-steps</field><field name="content">
+  final step finish configure deploy wizard click finish deploy select project corresponding server run wrapper generation tool
+  case new extension detect tool restart run
+  note deploy project dependency automatically add denodo extension project wizard project create copy folder denodo_home/extension thirdparty lib
+  case dependency eclipse project export jar file copy denodo_home/extension thirdparty lib
+  final step
+  </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/denodo4e/reference/supported_extension_types/supported_extension_types#supported-extension-types</field><field name="content">
+  support extension type denodo4e allow create deploying debug follow type extension vdp itp server itpilot custom function vdp custom function aggregate non aggregate function
+  vdp custom policy vdp custom input filter vdp custom wrapper
+  installation denodo vdp itp server require develop custom wrapper
+  vdp store procedure
+  installation denodo vdp itp server require develop stored procedure
+  aracne scheduler server exporter
+  installation denodo scheduler server require develop exporter handler
+  installation denodo scheduler server require develop handler
+  filter
+  installation denodo scheduler server require develop filter
+  crawler
+  installation denodo aracne server require develop crawler
+  wrapper generation tool itpilot custom function information follow section vdp custom function vdp custom policy vdp custom wrapper vdp store procedure vdp custom input filter section develop extension custom view policy virtual dataport developer guide
+  exporter handler filter crawler section extension plugin scheduler administration guide
+  itpilot custom function section create custom itpilot function itpilot developer guide
+  support extension type
+ </field>
+ </doc>
+</add>

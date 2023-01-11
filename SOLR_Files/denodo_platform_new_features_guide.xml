@@ -1,0 +1,847 @@
+<?xml version="1.0"?>
+<add>
+<doc>
+ <field name="topic"> 
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/what_is_new_u20220815#what-is-new-in-denodo-8-0-update-release-u06</field><field name="content">
+ new denodo 8.0 update 8.0u20220815 page list main enhancement update 8.0u20220815 denodo platform solution manager
+ publish video explain enhancement include update design studio virtual dataport enhancement enhancement datum catalog scheduler solution manager denodoconnect component list enhancement bug fix read release note update support site inside zip file update 
+ virtual dataport create flatten view flatten array view
+ view array create flatten view array want flatten
+ virtual dataport subscribe event publish apache kafka server execute query information include event optionally publish result query kafka listener
+ feature work similarly feature jms listener java message service available kafka instead jms
+ new function jsonpath
+ extract text json document json expression
+ virtual dataport datum source
+ new feature easy consume datum rest api use xml json datum source create base view
+ enter base url api data source e.g. https://www.acme.com/api create base view provide operation e.g. /customer select http method
+ url operation store datum source create datum source operation rest api
+ main benefit define authentication pagination option proxy set datum source base view datum source use option
+ long duplicate credential multiple datum source
+ exist datum source work usual new datum source
+ create json xml datum source base openapi swagger document rest api
+ use open wizard create json xml datum source select openapi 3 document indicate url openapi document click load default value
+ click create base view design studio administration tool display operation define openapi document like create jdbc base view select operation want create base view
+ easy consume datum rest api need know url operation
+ df json xml excel datum source retrieve datum aws s3
+ new jdbc adapter cloud sql mysql google cloud platform cache engine
+ cloud sql postgresql google cloud platform cache engine
+ microsoft sql server 2019 sas 9.4 virtual dataport cache engine
+ incremental cache load update exist cache datum support available bigquery cache datum create remote table
+ list database denodo support incremental load
+ customize ddl statement cache engine execute create table cache database command create remote table materialize table
+ use feature execute vql statement section jdbc data source vql guide
+ follow update provide graphical support
+ cache engine use database azure sql database cloud sql mysql google cloud platform cloud sql postgresql google cloud platform hive 3.0 list database support cache engine
+ virtual dataport odbc driver
+ significant performance improvement query return large number row
+ environment query run 30 fast
+ need update odbc driver improvement odbc interface virtual dataport
+ virtual dataport operation security
+ oauth set virtual dataport store claim i.e. attribute oauth token session attribute user
+ example oauth token organization claim department user
+ configure oauth setting store claim session
+ configure rest authentication mechanism store session attribute i.e. kerbero saml ldap denodo security token
+ open server configuration appropriate tab
+ user log ldap userprincipalname store session
+ use session attribute define global security policy audience i.e. apply user department
+ initial sql sentence jdbc data source
+ global security policy
+ define global security policy affect user session attribute meet certain condition
+ condition operator like contain
+ operator =
+ new store procedure get_database
+ return database description set
+ user privilege metadata database privilege write obtain vql database element
+ virtual dataport return vql include .propertie file include encrypted value username password
+ want service account dedicate backup
+ account export vql database periodically need metadata privilege
+ able obtain vql username password run query import vql virtual dataport
+ virtual dataport design studio vql shell design studio smart autocomplete select query press ctrl+space vql shell display popup suggestion
+ suggestion depend position cursor query
+ example type select press ctrl+space list view database connect
+ cursor select press ctrl+space list field view
+ find replace press ctrl+f type search box
+ error handling query parse error vql shell highlight problem
+ right number number statement error
+ button right navigate error
+ auto complete feature select statement command create datasource create wrapper etc
+ odata service performance improvement deal request $ filter nest $ expand
+ datum catalog summary tab view new button display datum view power bi generate file create datum source power bi query view
+ administrator enable option personalization page section external tool
+ synchronize metadata virtual dataport datum catalog import tag virtual dataport
+ scheduler improvement feature store metadata scheduler add support mysql 8
+ long necessary manually create table database scheduler server create restart
+ performance improvement jdbc exporter store datum snowflake fast
+ scheduler display individual report execution parameterize query successfully execute
+ solution manager automate cloud mode work region aws govcloud
+ add support store metadata solution manager mysql 8 improvement management revision use delete revision
+ revision include scheduler extension
+ enhancement apply component design studio datum catalog scheduler web administration tool configure run reverse proxy proxy set design studio datum catalog scheduler
+ rest api data catalog scheduler support oauth authentication
+ documentation release note officially provide support run denodo platform solution manager window 11 software requirement denodo platform software requirement solution manager
+ information deprecate feature feature create odbc datum source virtual dataport deprecate
+ feature rely jdbc odbc bridge java
+ start java 8 oracle long support jdbc odbc bridge include java virtual machine
+ database provide jdbc driver create jdbc data source instead odbc
+ query involve jdbc datum source run fast involve odbc datum source underlie database
+ denodo monitor feature send snmp trap information receive query monitor cache monitor
+ feature remove
+ want use use denodo monitor 8.0u20220126
+ feature deprecate denodo platform 8.0
+ new denodo 8 0 update release u06
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/what_is_new_u20220126#what-is-new-in-denodo-8-0-update-20220126</field><field name="content">
+ new denodo 8.0 update 20220126 page list main enhancement add update 8.0 20220126
+ publish video explain enhancement include update design studio virtual dataport enhancements jdbc odbc scheduler solution manager enhancement list enhancement bug fix read release note update support site inside zip file update 
+ virtual dataport new feature global security policy
+ global security policy set restriction apply user view verify certain condition
+ restriction mask result query depend user run query reject query etc
+ easy manage current view restriction row restriction column privilege choose apply global policy view view certain database instead assign restriction view
+ new performance improvement query group clause condition involve view parameter group push source possible
+ virtual dataport datum source add support new database sap iq know sybase iq
+ hive 3.0 list support database
+ df excel json xml datum source use private key file authentication ftp server
+ use username password
+ add support retrieve file hdfs server
+ sap bw connector multidimensional datum source support interval variable
+ use feature grant access user account virtual dataport connect sap bw rsz_x_component_get function grant privilege sap bw multidimensional datum source
+ create datum source connect google bigquery upload service account key file wizard
+ manually copy file computer run denodo server
+ delimit file df datum source point .zip file file file datum source process delimit file zip file
+ process
+ file zip file structure column
+ virtual dataport cache engine
+ load incrementally cache view summary view remote table temporary table target database azure synapse
+ previous update database incremental mode
+ virtual dataport web service publish denodo rest web service publish include openapi viewer swaggerui
+ viewer end user web service visualize openapi document define operation web service test operation viewer
+ open root url service browser link viewer
+ open design studio summary web service
+ look feel rest web service restful web service i.e. http://denodo-server.acme.com:9090/denodo-restfulws modernize
+ virtual dataport jdbc driver configure jdbc driver generate log message help troubleshoot issue
+ driver store message file print console
+ enable need add property connection url enable jdbc logging
+ virtual dataport operation security define row restriction view choose mask sensitive value
+ choose return character value set numeric value 0 1 apply custom expression set value null
+ option mask sensitive value set null
+ user multiple role contain fine grain privilege like row restriction behavior consistent principle add role expand privilege restrict
+ visit section fine grain privilege view level detail change
+ virtual dataport design studio follow roadmap feature administration tool virtual dataport available design studio server configuration
+ note administrator access like administration tool
+ resource manager publish soap web service create summary use summary recommendation tool database managament
+ metadata database configuration catalog search edit manually vql derive view datum catalog configure datum catalog store metadata external database use kerbero authentication connect oracle sql server scheduler result run job open popup display number file generate exporter file
+ solution manager automate cloud mode solution manager support azure
+ main benefit automate cloud mode instantiate manage entire deployment denodo server create configure custom azure element ssh connection individual instance configure set
+ automate installation launch denodo platform server solution manager require service account azure provide organization
+ solution manager automate deployment denodo platform infrastructure control organization outside organization access
+ configure monitor feature solution manager graphically
+ update modify configuration file manually
+ information deprecate feature parameter --property cluster script export deprecate
+ feature deprecate denodo platform 8.0
+ new denodo 8 0 update 20220126
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/what_is_new_u20210715#what-is-new-in-denodo-8-0-update-20210715</field><field name="content">
+ new denodo 8.0 update 20210715 page list main enhancement add update 8.0 20210715 denodo platform solution manager
+ publish video explain enhancement include update virtual dataport enhancement data catalog enhancement enhancement solution manager scheduler odata graphql
+ information new featurepack list enhancement bug fix read release note update support site inside zip file update 
+ datum catalog update include new version datum catalog great improvement new user interface recommendation view web service collaboration user
+ important instal update export datum catalog
+ instal update import
+ section upgrade 8.0ga 8.0u20210209 explain detail
+ ai recommendation featurepack datum catalog display personalize recommendation user base previous activity
+ language file datum catalog japanese simplify chinese french available download
+ file administrator change language datum catalog
+ language file simplify chinese available design studio
+ page language web administration tool link download file explain use
+ page explain administrator translate user interface application language
+ add support store metadata datum catalog oracle 18c 19c
+ list database use store metadata
+ rest api data catalog operation query search feature integrate application
+ learn invoke api open visualizer api
+ https://denodo-server.acme.com:9443/denodo-data-catalog/swagger-ui.html#/search
+ common component provide support run denodo platform solution manager red hat build openjdk version 11 appendix support java development kit jdk installation guide
+ virtual dataport automatic recommendation summary denodo platform 8.0 new feature smart query acceleration rely new type view summary
+ featurepack include ai drive assistant artificial intelligence analyze past query recommend new summary query acceleration
+ load incrementally cache view summary view remote table temporary table
+ execution engine obtain datum source target table cache table table summary view insert new row update row exist
+ database know upsert
+ example load cache view sale incrementally maching_pk cache engine use value primary key identify row cache table insert update
+ select sale sale_date 2020 08 01 context('cache_preload'='true cache_invalidate'='matching_pk update "content" summary view remote table temporary table 
+ query use field primary key view detect row need update insert insert customers_2020
+ duplicate key update select all_customer entry_date 2020 01 01 update "content" summary view remote table temporary table 
+ query use field customer_id detect duplicate row insert customers_2020
+ duplicate key customer_id update select all_customer entry_date 2020 01 01 new function localtime return current time hour minute second
+ value type time
+ previously obtain current time type timestamp execute cast(current_timestamp time time zone
+ recommend new function denodo delegate database expression
+ complement function current_date localdate localtimestamp timestamp current_timestamp timestamptz
+ note localtime reserve word view field database etc
+ performance improvement area query use function delegable database function reference field execution engine evaluate function delegate result database
+ improve delegation query improve execution time significantly
+ process automatic simplification query fast create remote table non administrator user execute query involve view column privilege row restriction
+ cost base optimizer efficient select execution plan query involve large number join operation
+ virtual dataport datum source add support new database sap hana 2.0 cache database
+ datum source retrieve statistic query system table database statistic gather system table vendor
+ cost base optimizer enable use statistic calculate optimal execution plan
+ datum source obtain statistic system table follow database hive google bigquery oracle essbase denodo 8.0 ga update introspection essbase user account require privilege manager database essbase
+ long necessary
+ previous update 8.0u20210209 feature available disabled default enable default
+ multidimensional datum source connect sap obtain sap logon ticket behalf user execute query
+ goal execute query sap behalf final user instead service account
+ virtual dataport
+ cache engine add support new cache database google bigquery sap hana 2.0 virtual dataport web service publish denodo index page restful web service list database virtual dataport
+ welcome message
+ http://denodo-server.acme.com:9090/denodo-restfulws/ list database
+ rest web service provide openapi document version 3.0
+ document describe rest web service easy develop application interact web service
+ rest web service provide openapi 2.0 document
+ section openapi swagger administration guide
+ important strongly recommend increase memory allocate tomcat denodo platform
+ safe suggest double memory
+ necessary rest web service denodo publish openapi 3.0 specification use memory
+ virtual dataport design studio follow roadmap feature administration tool port design studio user role manage user role grant privilege role etc version control system integration vcs user check check vcs subversion microsoft tfs
+ previous update git
+ virtual dataport
+ operation security configure jdbc datum source retrieve credential password vault aws secret manager azure key vault cyberark vault available previous update
+ hashicorp vault main benefit password vault avoid store denodo service account jdbc datum source
+ addition easy rotate credential service account denodo retrieve automatically vault necessary
+ credential vault
+ denodo monitor denodo monitor store log aws s3
+ configure denodo monitor store log information oracle sql server denodo monitor use kerbero authentication connect database
+ configure denodo monitor enable feature
+ security purpose web container denodo apache tomcat refuse http request method option
+ early update method option allow
+ reason change method option provide information attacker additional information server
+ cor mechanism rely server i.e. web container denodo accept method option provide certain information
+ cor follow step describe section initial set cor administration guide
+ odata service odata service execute metadata query
+ improve performance request service
+ scheduler new type job load refresh virtual dataport summary
+ application connect rest api scheduler http basic authentication
+ scheduler configure store metadata oracle sql server configure connection use kerbero authentication
+ solution manager rest api solution manager new operation update aws credential solution manager update aws global credential update aw environment credential
+ import export set export solution manager catalog configuration import solution manager catalog configuration
+ release license usage specific server free license usage server d
+ start stop restart cluster create automate cloud mode start automate mode cluster stop automate mode cluster configure graphically monitor feature solution manager
+ modify configuration file solution manager
+ documentation release note enable ssl installation denodo virtual dataport recommend add parameter ssl = true connection url
+ connection url define application connect denodo jdbc driver
+ e.g. jdbc denodo://denodo server.acme.com:9999 customer360?ssl = true querytimeout=100000 chunktimeout=1000 useragent = myapplication set property true driver try establish ssl connection
+ property driver try establish non ssl connection ssl enable server connection fail immediately driver try establish ssl connection
+ recommend enable option administration tool
+ click menu tool admin tool preference
+ click connection select use ssl communication
+ set true particularly beneficial cloud environment connection client application denodo fast local network
+ parameter available 8.0 ga update 7.0
+ recommend use possible
+ information deprecate feature feature mark deprecate release update
+ feature deprecate denodo platform 8.0
+ new denodo 8 0 update 20210715
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/what_is_new_u20210715#id1</field><field name="content">
+ load cache view sale incrementally maching_pk cache engine use value primary key identify row cache table insert update
+ select sale sale_date 2020 08 01 context('cache_preload'='true cache_invalidate'='matching_pk
+ id1
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/what_is_new_u20210715#id2</field><field name="content">
+ update "content" summary view remote table temporary table 
+ query use field primary key view detect row need update insert insert customers_2020
+ duplicate key update select
+ all_customer entry_date 2020 01 01
+ id2
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/what_is_new_u20210715#id3</field><field name="content">
+ update "content" summary view remote table temporary table 
+ query use field customer_id detect duplicate row insert customers_2020
+ duplicate key customer_id update select
+ all_customer entry_date 2020 01 01
+ id3
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/what_is_new_u20210209#what-is-new-in-denodo-8-0-update-20210209</field><field name="content">
+ new denodo 8.0 update 20210209 page list main enhancement add update 8.0 20210209 denodo platform
+ publish video explain enhancement virtual dataport
+ jdbc odbc data catalog scheduler solution manager
+ list enhancement bug fix read release note support site inside zip file update 
+ virtual dataport add support store metadata virtual dataport database azure sql amazon aurora mysql postgresql edition postgresql 11 postgresql 12
+ complete list section store metadata external database administration guide
+ new function localtimestamp return current timestamp value type timestamp
+ previously obtain current timestamp type timestamp execute cast current_timestamp timestamp time zone
+ recommend new function denodo delegate database expression
+ performance improvement area cost optimizer join reorder large hierarchy view
+ execution engine create execution plan complex query completely delegate database
+ store procedure get_element
+ noticeable base view
+ store procedure get_foreign_key return foreign key view
+ create new view
+ export metadata
+ noticeable export lot element
+ delete database large number base view
+ virtual dataport datum source add support new database amazon aurora mysql postgresql edition
+ oracle essbase introspection essbase user account require privilege manager database essbase
+ configure virtual dataport require privilege
+ update feature disable default
+ section requirement essbase 11 adapter explain enable
+ virtual dataport cache engine
+ new feature direct load
+ direct load cache engine transfer datum directly appropriate table cache database denodo condition meet datum obtain single jdbc datum source
+ cache engine configure use data source
+ entire query delegate database
+ database support statement insert select
+ enhancement apply load remote table summary execute insert statement
+ scenario enhancement dramatically increase performance datum need transfer database denodo database
+ addition denodo process datum
+ page cache mode runtime
+ add support new cache database amazon aurora mysql postgresql edition include support load datum bulk datum load api
+ api process cache datum fast
+ virtual dataport web service publish denodo
+ openapi swagger definition rest web service include field view publish web service
+ definition include configuration parameter $ select $ count $ start_index etc
+ denodo odata service support lambda operator 
+ definition operator odata 4.0 specification
+ virtual dataport administration tool improvement dialog create join view tab model add view join view administration tool suggest view want add join view base association view
+ suggestion label associate view click view add automatically
+ define join view add view administration tool automatically create join condition association view
+ join condition condition mapping association
+ improvement add design studio
+ virtual dataport design studio
+ follow roadmap feature administration tool port design studio configure data movement execution plan option view
+ configure source configuration jdbc odbc datum source
+ perform new action version control system pull revert discard management global element
+ virtual dataport jdbc driver denodo jdbc driver denodo odbc driver support oauth authentication
+ driver provide path connect denodo oauth
+ depend choose add certain parameter connection string path 1 authentication provide access token client application obtain oauth access token pass driver
+ driver use token connect virtual dataport instead user password
+ path 2 oauth 2.0 resource owner password credential client application capability obtain oauth token driver obtain behalf application
+ application open connection driver connect identity provider indicate retrieve oauth token
+ driver use token connect virtual dataport
+ section oauth authentication administration guide explain enable oauth authentication configure jdbc connection use oauth
+ use feature use driver update
+ use driver 8.0 ga
+ driver support retrieve auto generate value
+ database mechanism automatically generate value row insert
+ example primary key value row insert
+ method statement.getgeneratedkey return resultset object column automatically generate value
+ insert row denodo denodo try retrieve auto generate value underlie database
+ note mechanism rely database row actually insert underlie database provide auto generate value driver able provide
+ driver support jdbc escape syntax date time literal
+ date literal d yyyy mm dd timestamp ts yyyy mm dd hh mm ss.f
+ time literal t hh mm ss
+ example execute query like connect denodo jdbc driver select order order_date = d 2020 01 01
+ enhancement improve compatibility party application
+ driver support url jdbc denodo
+ example jdbc denodo://denodo server.acme.com:9999 admin
+ prefix jdbc vdb support backward compatibility
+ virtual dataport odbc driver
+ denodo odbc driver support oauth authentication
+ capability oauth authentication jdbc
+ use feature use driver update
+ use driver 8.0 ga
+ denodo odbc driver include update open connection kerbero authentication denodo enable option allow kerbero authentication odbc ado.net authentication database want connect
+ benefit odbc application choose want use user password kerberos authentication connect database configurable dsn
+ benefit feature client application use odbc driver update
+ feature benefit client application use postgresql odbc driver e.g. tableau use old version denodo odbc driver
+ application meet condition enable allow kerbero authentication database use kerbero authentication odbc interface virtual dataport
+ enable kerbero authentication odbc connection old version driver
+ virtual dataport operation security
+ configure jdbc datum source retrieve credential cyberark enterprise password vault
+ main benefit avoid store denodo service account jdbc datum source
+ addition easy rotate credential service account long store denodo
+ follow update denodo 8.0 include support password vault
+ datum catalog add support store metadata datum catalog amazon aurora mysql postgresql edition
+ 
+ list database use store metadata
+ summary web service display thing url connect service
+ administrator customize url specifically hostname port
+ useful complex environment hostname data catalog different hostname virtual dataport
+ customize url page administration set personalization look web service uri
+ scheduler add support store metadata scheduler azure sql amazon aurora mysql postgresql edition
+ configure schedul job send notification misfire
+ handler section scheduler administration guide
+ solution manager new option create revision include user privilege enable revision include privilege relate element revision
+ statement create user role element privilege grant element
+ statement grant privilege user role element
+ add support store set metadata solution manager oracle 18 19c previous version oracle support
+ section set external database list database use store metadata
+ documentation release note process set kerbero virtual dataport documentation long instruct administrator user account denodo associate spn
+ requirement necessary
+ information deprecate feature feature mark deprecate release update
+ feature deprecate denodo platform 8.0
+ new denodo 8 0 update 20210209
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/highlights_of_denodo_80_ga#denodo-8-0-ga-highlights</field><field name="content">
+ denodo 8.0 ga highlight page list main feature include denodo 8.0 ga update follow page guide provide exhaustive list new feature
+ enhance user experience new redesign web base ui component include new design studio enable browser base development
+ design maximize user experience advantage late technology ux trend create smooth development interface single sign integration simplify transition different component add capability like factor authentication
+ support saml oauth openid integrate external identity provider like okta ping duo azuresso aws sso
+ cloud native deployment integrate infrastructure management aw soon available azure web control panel include centralized cluster management scaling auto scaling option automation update installation tsl vpc configuration
+ query acceleration denodo 8 build outstanding performance feature include query acceleration capability
+ denodo new engine able accelerate execution automatic query rewrite process identify pre calculate summary reduce execution time
+ result end user report tool change query execution time 100x fast analytical scenario expand api support denodo 8.0 provide broad capability api management support graphql
+ graphql new query language web service simplify application development overcome limitation restful endpoint
+ data model define denodo accessible graphql addition sql rest odata option available previous version
+ learn feature directly expert denodo development team watch video publish site
+ denodo 8 0 ga highlight
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_solution_manager#new-features-of-the-solution-manager-version-ga</field><field name="content">
+ new feature solution manager 8.0 ga section list new feature solution manager 8.0
+ read new feature late update new denodo 8.0 update 8.0u20220815
+ automate deployment single point access authentication authorization new authentication protocol single sign privilege system extend unified user interface manage role privilege diagnostic monitor tool solution manager diagnostic monitor tool populate server automatically diagnostic monitor
+ tool start
+ automatically automate deployment solution manager automate deployment denodo platform amazon aw
+ automate creation management cluster choose type ec2 instance number ec2 instance cluster etc
+ creation load balancer auto scaling group
+ installation launch denodo server
+ installation denodo update cluster server downtime
+ denodo 8.0 ga enable ssl denodo server
+ main benefit instantiate manage entire aws deployment create configure custom aws element ssh connection individual server configure set
+ automate installation launch denodo platform server solution manager require service account aw provide organization
+ way solution manager automate deployment denodo platform benefit infrastructure control organization outside organization access
+ currently solution manager automate amazon aw
+ roadmap version 8.0 add support microsoft azure
+ meantime run denodo platform azure deployment automate
+ single point access solution manager work single point access application denodo datum catalog new design studio scheduler diagnostic monitor tool non administrator log solution manager depend privilege link application right access
+ version 7.0 functionality partially provide web panel
+ authentication authorization new authentication protocol single sign 
+ solution manager integrate identity provider new support authentication protocol saml 2.0 oauth 2.0 openid kerbero addition solution manager provide single sign capability
+ user log solution manager access application list design studio datum catalog enter credential
+ configure single sign solution manager user access datum catalog saml authentication datum catalog support saml authentication
+ privilege system extend solution manager provide fine grain privilege allow administrator control task user environment
+ example version 7.0 user privilege solution_manager_promotion_production deploy revision production environment i.e. license scenario production
+ version 8.0 administrator grant privilege deploying revision certain environment section authorization solution manager administration guide
+ unify user interface manage role privilege 
+ manage authentication authorization user solution manager administration tool
+ tool create user role assign revoke role user enable kerbero authentication change ldap set etc
+ solution manager use virtual dataport server installation engine authenticate authorize user
+ difference version 8.0 long need connect virtual dataport directly
+ diagnostic monitor tool solution manager diagnostic monitor tool populate server automatically 
+ diagnostic monitor tool automatically populate list server server register solution manager
+ administrator long register manually virtual dataport server organization tool
+ apply denodo server create automate mode solution manager register manually
+ apply diagnostic monitor tool solution manager installation denodo platform
+ installation denodo platform define server monitor manually
+ diagnostic monitor tool start automatically start component solution manager administration tool diagnostic monitor tool start automatically
+ new feature solution manager version ga
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_solution_manager#automated-deployments</field><field name="content">
+ automate deployment solution manager automate deployment denodo platform amazon aw
+ automate creation management cluster choose type ec2 instance number ec2 instance cluster etc
+ creation load balancer auto scaling group
+ installation launch denodo server
+ installation denodo update cluster server downtime
+ denodo 8.0 ga enable ssl denodo server
+ main benefit instantiate manage entire aws deployment create configure custom aws element ssh connection individual server configure set
+ automate installation launch denodo platform server solution manager require service account aw provide organization
+ way solution manager automate deployment denodo platform benefit infrastructure control organization outside organization access
+ currently solution manager automate amazon aw
+ roadmap version 8.0 add support microsoft azure
+ meantime run denodo platform azure deployment automate
+ automate deployment
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_solution_manager#single-point-of-access</field><field name="content">
+ single point access solution manager work single point access application denodo datum catalog new design studio scheduler diagnostic monitor tool non administrator log solution manager depend privilege link application right access
+ version 7.0 functionality partially provide web panel
+ single point access
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_solution_manager#authentication-and-authorization</field><field name="content">
+ authentication authorization new authentication protocol single sign 
+ solution manager integrate identity provider new support authentication protocol saml 2.0 oauth 2.0 openid kerbero addition solution manager provide single sign capability
+ user log solution manager access application list design studio datum catalog enter credential
+ configure single sign solution manager user access datum catalog saml authentication datum catalog support saml authentication
+ privilege system extend solution manager provide fine grain privilege allow administrator control task user environment
+ example version 7.0 user privilege solution_manager_promotion_production deploy revision production environment i.e. license scenario production
+ version 8.0 administrator grant privilege deploying revision certain environment section authorization solution manager administration guide
+ unify user interface manage role privilege 
+ manage authentication authorization user solution manager administration tool
+ tool create user role assign revoke role user enable kerbero authentication change ldap set etc
+ solution manager use virtual dataport server installation engine authenticate authorize user
+ difference version 8.0 long need connect virtual dataport directly
+ authentication authorization
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_solution_manager#new-authentication-protocols-and-single-sign-on</field><field name="content">
+ new authentication protocol single sign solution manager integrate identity provider new support authentication protocol saml 2.0 oauth 2.0 openid kerbero addition solution manager provide single sign capability
+ user log solution manager access application list design studio datum catalog enter credential
+ configure single sign solution manager user access datum catalog saml authentication datum catalog support saml authentication
+ new authentication protocol single sign
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_solution_manager#privileges-system-extended</field><field name="content">
+ privilege system extend solution manager provide fine grain privilege allow administrator control task user environment
+ example version 7.0 user privilege solution_manager_promotion_production deploy revision production environment i.e. license scenario production
+ version 8.0 administrator grant privilege deploying revision certain environment section authorization solution manager administration guide
+ privilege system extend
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_solution_manager#unified-user-interface-to-manage-roles-and-privileges</field><field name="content">
+ unify user interface manage role privilege 
+ manage authentication authorization user solution manager administration tool
+ tool create user role assign revoke role user enable kerbero authentication change ldap set etc
+ solution manager use virtual dataport server installation engine authenticate authorize user
+ difference version 8.0 long need connect virtual dataport directly
+ unify user interface manage role privilege
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_solution_manager#diagnostic-monitoring-tool-of-the-solution-manager</field><field name="content">
+ diagnostic monitor tool solution manager diagnostic monitor tool populate server automatically 
+ diagnostic monitor tool automatically populate list server server register solution manager
+ administrator long register manually virtual dataport server organization tool
+ apply denodo server create automate mode solution manager register manually
+ apply diagnostic monitor tool solution manager installation denodo platform
+ installation denodo platform define server monitor manually
+ diagnostic monitor tool start automatically start component solution manager administration tool diagnostic monitor tool start automatically
+ diagnostic monitoring tool solution manager
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_solution_manager#diagnostic-monitoring-tool-populates-servers-automatically</field><field name="content">
+ diagnostic monitor tool populate server automatically 
+ diagnostic monitor tool automatically populate list server server register solution manager
+ administrator long register manually virtual dataport server organization tool
+ apply denodo server create automate mode solution manager register manually
+ apply diagnostic monitor tool solution manager installation denodo platform
+ installation denodo platform define server monitor manually
+ diagnostic monitoring tool populate server automatically
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_solution_manager#diagnostic-monitoring-tool-starts-automatically</field><field name="content">
+ diagnostic monitor tool start automatically start component solution manager administration tool diagnostic monitor tool start automatically
+ diagnostic monitoring tool start automatically
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#new-features-of-virtual-dataport-version-ga</field><field name="content">
+ new feature virtual dataport 8.0 ga section list new feature virtual dataport 8.0 ga update
+ read new feature late update new denodo 8.0 update 8.0u20220815
+ design studio general store catalog external database graphical support upload driver library graphical support upload kerberos file connection use port manage configuration property rename element execution engine smart query acceleration summary view datum source hadoop distribution require bulk datum load authentication security global ldap
+ authentication apply change oauth 2.0 saml 2.0 kerbero set restart propagation column privilege row restriction custom policy denodo store procedure procedure create remote table provide information administration tool easy access odata graphql service warn delete implementation interface view database optional server uri northbound connection new denodo graphql service design studio virtual dataport new web interface developer design studio
+ design studio aim developer create datum source base view derive view publish web service etc
+ layout similar administration tool
+ developer use design studio administration tool
+ datum source view web service create modify design studio open modify administration tool vice versa
+ administrator use administration tool configure virtual dataport
+ modify cache configuration set authentication user management etc
+ follow update denodo platform incrementally add feature design studio
+ administration tool actively maintain life version 8.0
+ solution manager include design studio
+ start start automatically start solution manager administration tool
+ installation denodo platform include design studio
+ recommend design studio solution manager https://solution-manager.acme.com:19443/denodo-design-studio/ solution manager provide single point access denodo component design studio
+ addition user able use single sign protocol like oauth saml kerbero log design studio
+ set environment solution manager log find link open design studio application page
+ addition access directly url https://denodo-solution-manager.acme.com:19443/denodo-design-studio/#/web-local-login
+ access design studio denodo platform https://denodo-server.acme.com:9443/denodo-design-studio/#/web-local-login
+ general store catalog external database catalog virtual dataport consist set metadata create user datum source view web service user role etc
+ default catalog use apache derby database embed virtual dataport
+ configure catalog use external database instead embed section store metadata external database administration guide
+ graphical support upload driver library denodo 8.0 long log computer virtual dataport run copy jdbc driver source database sap java connector jco essbase library etc
+ administration tool design studio provide support upload file virtual dataport server
+ open wizard menu file extension management
+ important denodo 8.0 copy driver library installation instead upload dialog
+ way library copy appropriate directory virtual dataport configure store catalog external database server share database access library
+ section import extension administration guide
+ graphical support upload kerberos file denodo 8.0 long log computer virtual dataport run copy kerbero configuration file keytab file krb5 file
+ instead wizard configure kerbero select file computer administration tool design studio upload computer virtual dataport run
+ connection use port jdbc driver administration tool new design studio use single port communicate virtual dataport default 9999
+ previous version communication require port 9999 9997
+ change simplify configuration firewall
+ jmx connection need open port firewall previous version
+ port change
+ default application establish connection port 9997 port 9995 auxiliary port
+ follow application denodo platform connect port denodo diagnostic monitor tool denodo monitor monitor feature solution manager
+ change odbc connectivity
+ manage configuration property read value configuration property virtual dataport denodo_home /conf vdp vdbconfiguration.propertie embed web container denodo_home /resource apache tomcat conf tomcat.propertie new store procedure get_parameter
+ convenient connect computer obtain value parameter
+ rename element rename datum source jms listener web service soap rest
+ server explorer administration tool design studio right click element click rename
+ rename view previous version
+ execution engine smart query acceleration summary view 
+ analytical environment query involve combine fact table dimension calculate aggregation
+ scenario denodo 8 include smart query acceleration technique new type view summary
+ summary store common intermediate result query optimizer use start point accelerate analytical query
+ section smart query acceleration summary administration guide
+ datum source hadoop distribution require bulk datum load previous version enable bulk datum load datum source need download hadoop distribution
+ new version virtual dataport include necessary library perform bulk datum load hdfs base database need download
+ benefit datum source database hive 2.0 impala prestodb prestosql spark enable bulk datum load simple particularly window hadoop distribution require file winutils.exe
+ consider upgrade previous version denodo 8.0 datum source database import previous version work modify configuration provide hadoop distribution locate path
+ previous version indicate hadoop executable location
+ administration tool long option hadoop executable location new datum source
+ maintain backward compatibility administration tool option hadoop executable location datum source create option vql statement parameter hadoop_executable_location
+ authentication security global ldap authentication 
+ set global ldap configuration entire server instead define database
+ enable client application connect database credential validate ldap configuration regardless database application connect
+ previous version configure ldap authentication database instruct client application establish connection particular database
+ administration tool configuration locate dialog server configuration tab server authentication
+ section ldap authentication administration guide explain enable
+ addition reuse global ldap configuration kerbero saml 2.0 instead provide ldap set
+ simplify configuration time virtual dataport configure obtain role user system e.g. active directory regardless authentication method
+ apply change oauth 2.0 saml 2.0 kerbero set restart long need restart virtual dataport situation enable disable oauth 2.0 authentication change set
+ previous version restart enable disable
+ previous version change oauth setting restart
+ enable disabling saml 2.0 authentication change set
+ previous version restart
+ previous version change oauth setting restart
+ enable disable kerbero authentication change set
+ example change keytab select clear check box avoid domain authentication need restart
+ propagation column privilege row restriction custom policy previous version denodo 7.0 default execution engine apply column privilege row restriction custom policy grant view user role view directly reference statement
+ configure denodo 7.0 execution engine enforce column row restriction custom policy regardless view directly involve query
+ documentation 7.0 "topic"
+ denodo 8.0 execution engine enforce column row restriction custom policy regardless view directly involve query
+ denodo store procedure procedure create remote table provide information store procedure create_remote_table provide information step perform
+ version 7.0 return row column status step
+ provide additional information step
+ section create_remote_table vql guide
+ administration tool easy access odata graphql service context menu server explorer administration tool new option open odata service open graphql service
+ easy access service
+ warn delete implementation interface view delete view administration tool list view depend delete confirm want delete view
+ dialog warn interface view invalid implementation view delete section view affect modification administration guide
+ database optional server uri connect virtual dataport administration tool design studio database optional uri e.g. //denodo server.acme.com:9999
+ specify database connect database privilege connect
+ previous version provide database
+ apply jdbc connection type connection
+ northbound connection new denodo graphql service denodo provide graphql service
+ graphql datum query language runtime execute query datum
+ main feature client power ask exactly need
+ resource single request reduce number api request section denodo graphql service administration guide
+ new service complement exist offer odata4 service restful web service
+ new feature virtual dataport version ga
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#design-studio</field><field name="content">
+ design studio virtual dataport new web interface developer design studio
+ design studio aim developer create datum source base view derive view publish web service etc
+ layout similar administration tool
+ developer use design studio administration tool
+ datum source view web service create modify design studio open modify administration tool vice versa
+ administrator use administration tool configure virtual dataport
+ modify cache configuration set authentication user management etc
+ follow update denodo platform incrementally add feature design studio
+ administration tool actively maintain life version 8.0
+ solution manager include design studio
+ start start automatically start solution manager administration tool
+ installation denodo platform include design studio
+ recommend design studio solution manager https://solution-manager.acme.com:19443/denodo-design-studio/ solution manager provide single point access denodo component design studio
+ addition user able use single sign protocol like oauth saml kerbero log design studio
+ set environment solution manager log find link open design studio application page
+ addition access directly url https://denodo-solution-manager.acme.com:19443/denodo-design-studio/#/web-local-login
+ access design studio denodo platform https://denodo-server.acme.com:9443/denodo-design-studio/#/web-local-login
+ design studio
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#general</field><field name="content">
+ general store catalog external database catalog virtual dataport consist set metadata create user datum source view web service user role etc
+ default catalog use apache derby database embed virtual dataport
+ configure catalog use external database instead embed section store metadata external database administration guide
+ graphical support upload driver library denodo 8.0 long log computer virtual dataport run copy jdbc driver source database sap java connector jco essbase library etc
+ administration tool design studio provide support upload file virtual dataport server
+ open wizard menu file extension management
+ important denodo 8.0 copy driver library installation instead upload dialog
+ way library copy appropriate directory virtual dataport configure store catalog external database server share database access library
+ section import extension administration guide
+ graphical support upload kerberos file denodo 8.0 long log computer virtual dataport run copy kerbero configuration file keytab file krb5 file
+ instead wizard configure kerbero select file computer administration tool design studio upload computer virtual dataport run
+ connection use port jdbc driver administration tool new design studio use single port communicate virtual dataport default 9999
+ previous version communication require port 9999 9997
+ change simplify configuration firewall
+ jmx connection need open port firewall previous version
+ port change
+ default application establish connection port 9997 port 9995 auxiliary port
+ follow application denodo platform connect port denodo diagnostic monitor tool denodo monitor monitor feature solution manager
+ change odbc connectivity
+ manage configuration property read value configuration property virtual dataport denodo_home /conf vdp vdbconfiguration.propertie embed web container denodo_home /resource apache tomcat conf tomcat.propertie new store procedure get_parameter
+ convenient connect computer obtain value parameter
+ rename element rename datum source jms listener web service soap rest
+ server explorer administration tool design studio right click element click rename
+ rename view previous version
+ general
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#storing-the-catalog-on-an-external-database</field><field name="content">
+ store catalog external database catalog virtual dataport consist set metadata create user datum source view web service user role etc
+ default catalog use apache derby database embed virtual dataport
+ configure catalog use external database instead embed section store metadata external database administration guide
+ store catalog external database
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#graphical-support-to-upload-drivers-and-other-libraries</field><field name="content">
+ graphical support upload driver library denodo 8.0 long log computer virtual dataport run copy jdbc driver source database sap java connector jco essbase library etc
+ administration tool design studio provide support upload file virtual dataport server
+ open wizard menu file extension management
+ important denodo 8.0 copy driver library installation instead upload dialog
+ way library copy appropriate directory virtual dataport configure store catalog external database server share database access library
+ section import extension administration guide
+ graphical support upload driver library
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#graphical-support-to-upload-kerberos-files</field><field name="content">
+ graphical support upload kerberos file denodo 8.0 long log computer virtual dataport run copy kerbero configuration file keytab file krb5 file
+ instead wizard configure kerbero select file computer administration tool design studio upload computer virtual dataport run
+ graphical support upload kerberos file
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#connections-only-use-one-port</field><field name="content">
+ connection use port jdbc driver administration tool new design studio use single port communicate virtual dataport default 9999
+ previous version communication require port 9999 9997
+ change simplify configuration firewall
+ jmx connection need open port firewall previous version
+ port change
+ default application establish connection port 9997 port 9995 auxiliary port
+ follow application denodo platform connect port denodo diagnostic monitor tool denodo monitor monitor feature solution manager
+ change odbc connectivity
+ connection use port
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#managing-configuration-properties</field><field name="content">
+ manage configuration property read value configuration property virtual dataport denodo_home /conf vdp vdbconfiguration.propertie embed web container denodo_home /resource apache tomcat conf tomcat.propertie new store procedure get_parameter
+ convenient connect computer obtain value parameter
+ manage configuration property
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#rename-elements</field><field name="content">
+ rename element rename datum source jms listener web service soap rest
+ server explorer administration tool design studio right click element click rename
+ rename view previous version
+ rename element
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#execution-engine</field><field name="content">
+ execution engine smart query acceleration summary view 
+ analytical environment query involve combine fact table dimension calculate aggregation
+ scenario denodo 8 include smart query acceleration technique new type view summary
+ summary store common intermediate result query optimizer use start point accelerate analytical query
+ section smart query acceleration summary administration guide
+ execution engine
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#smart-query-acceleration-summary-views</field><field name="content">
+ smart query acceleration summary view 
+ analytical environment query involve combine fact table dimension calculate aggregation
+ scenario denodo 8 include smart query acceleration technique new type view summary
+ summary store common intermediate result query optimizer use start point accelerate analytical query
+ section smart query acceleration summary administration guide
+ smart query acceleration summary view
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#data-sources</field><field name="content">
+ datum source hadoop distribution require bulk datum load previous version enable bulk datum load datum source need download hadoop distribution
+ new version virtual dataport include necessary library perform bulk datum load hdfs base database need download
+ benefit datum source database hive 2.0 impala prestodb prestosql spark enable bulk datum load simple particularly window hadoop distribution require file winutils.exe
+ consider upgrade previous version denodo 8.0 datum source database import previous version work modify configuration provide hadoop distribution locate path
+ previous version indicate hadoop executable location
+ administration tool long option hadoop executable location new datum source
+ maintain backward compatibility administration tool option hadoop executable location datum source create option vql statement parameter hadoop_executable_location
+ datum source
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#hadoop-distribution-is-not-required-for-bulk-data-load</field><field name="content">
+ hadoop distribution require bulk datum load previous version enable bulk datum load datum source need download hadoop distribution
+ new version virtual dataport include necessary library perform bulk datum load hdfs base database need download
+ benefit datum source database hive 2.0 impala prestodb prestosql spark enable bulk datum load simple particularly window hadoop distribution require file winutils.exe
+ consider upgrade previous version denodo 8.0 datum source database import previous version work modify configuration provide hadoop distribution locate path
+ previous version indicate hadoop executable location
+ administration tool long option hadoop executable location new datum source
+ maintain backward compatibility administration tool option hadoop executable location datum source create option vql statement parameter hadoop_executable_location
+ hadoop distribution require bulk datum load
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#authentication-and-security</field><field name="content">
+ authentication security global ldap authentication 
+ set global ldap configuration entire server instead define database
+ enable client application connect database credential validate ldap configuration regardless database application connect
+ previous version configure ldap authentication database instruct client application establish connection particular database
+ administration tool configuration locate dialog server configuration tab server authentication
+ section ldap authentication administration guide explain enable
+ addition reuse global ldap configuration kerbero saml 2.0 instead provide ldap set
+ simplify configuration time virtual dataport configure obtain role user system e.g. active directory regardless authentication method
+ apply change oauth 2.0 saml 2.0 kerbero set restart long need restart virtual dataport situation enable disable oauth 2.0 authentication change set
+ previous version restart enable disable
+ previous version change oauth setting restart
+ enable disabling saml 2.0 authentication change set
+ previous version restart
+ previous version change oauth setting restart
+ enable disable kerbero authentication change set
+ example change keytab select clear check box avoid domain authentication need restart
+ propagation column privilege row restriction custom policy previous version denodo 7.0 default execution engine apply column privilege row restriction custom policy grant view user role view directly reference statement
+ configure denodo 7.0 execution engine enforce column row restriction custom policy regardless view directly involve query
+ documentation 7.0 "topic"
+ denodo 8.0 execution engine enforce column row restriction custom policy regardless view directly involve query
+ authentication security
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#global-ldap-authentication</field><field name="content">
+ global ldap authentication set global ldap configuration entire server instead define database
+ enable client application connect database credential validate ldap configuration regardless database application connect
+ previous version configure ldap authentication database instruct client application establish connection particular database
+ administration tool configuration locate dialog server configuration tab server authentication
+ section ldap authentication administration guide explain enable
+ addition reuse global ldap configuration kerbero saml 2.0 instead provide ldap set
+ simplify configuration time virtual dataport configure obtain role user system e.g. active directory regardless authentication method
+ global ldap authentication
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#apply-changes-to-oauth-2-0-saml-2-0-and-kerberos-settings-without-restarting</field><field name="content">
+ apply change oauth 2.0 saml 2.0 kerbero set restart long need restart virtual dataport situation enable disable oauth 2.0 authentication change set
+ previous version restart enable disable
+ previous version change oauth setting restart
+ enable disabling saml 2.0 authentication change set
+ previous version restart
+ previous version change oauth setting restart
+ enable disable kerbero authentication change set
+ example change keytab select clear check box avoid domain authentication need restart
+ apply change oauth 2 0 saml 2 0 kerbero setting restart
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#propagations-of-column-privileges-row-restrictions-and-custom-policies</field><field name="content">
+ propagation column privilege row restriction custom policy previous version denodo 7.0 default execution engine apply column privilege row restriction custom policy grant view user role view directly reference statement
+ configure denodo 7.0 execution engine enforce column row restriction custom policy regardless view directly involve query
+ documentation 7.0 "topic"
+ denodo 8.0 execution engine enforce column row restriction custom policy regardless view directly involve query
+ propagation column privilege row restriction custom policy
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#denodo-stored-procedures</field><field name="content">
+ denodo store procedure procedure create remote table provide information store procedure create_remote_table provide information step perform
+ version 7.0 return row column status step
+ provide additional information step
+ section create_remote_table vql guide
+ denodo store procedure
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#procedure-create-remote-table-provides-more-information</field><field name="content">
+ procedure create remote table provide information store procedure create_remote_table provide information step perform
+ version 7.0 return row column status step
+ provide additional information step
+ section create_remote_table vql guide
+ procedure create remote table provide information
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#administration-tool</field><field name="content">
+ administration tool easy access odata graphql service 
+ context menu server explorer administration tool new option open odata service open graphql service
+ easy access service
+ warn delete implementation interface view delete view administration tool list view depend delete confirm want delete view
+ dialog warn interface view invalid implementation view delete section view affect modification administration guide
+ database optional server uri connect virtual dataport administration tool design studio database optional uri e.g. //denodo server.acme.com:9999
+ specify database connect database privilege connect
+ previous version provide database
+ apply jdbc connection type connection
+ administration tool
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#easier-access-to-odata-and-graphql-services</field><field name="content">
+ easy access odata graphql service 
+ context menu server explorer administration tool new option open odata service open graphql service
+ easy access service
+ easy access odata graphql service
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#warning-when-deleting-the-implementation-of-an-interface-view</field><field name="content">
+ warn delete implementation interface view delete view administration tool list view depend delete confirm want delete view
+ dialog warn interface view invalid implementation view delete section view affect modification administration guide
+ warn delete implementation interface view
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#database-is-optional-in-the-server-uri</field><field name="content">
+ database optional server uri connect virtual dataport administration tool design studio database optional uri e.g. //denodo server.acme.com:9999
+ specify database connect database privilege connect
+ previous version provide database
+ apply jdbc connection type connection
+ database optional server uri
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#northbound-connections</field><field name="content">
+ northbound connection new denodo graphql service denodo provide graphql service
+ graphql datum query language runtime execute query datum
+ main feature client power ask exactly need
+ resource single request reduce number api request section denodo graphql service administration guide
+ new service complement exist offer odata4 service restful web service
+ northbound connection
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_virtual_dataport#new-denodo-graphql-service</field><field name="content">
+ new denodo graphql service denodo provide graphql service
+ graphql datum query language runtime execute query datum
+ main feature client power ask exactly need
+ resource single request reduce number api request section denodo graphql service administration guide
+ new service complement exist offer odata4 service restful web service
+ new denodo graphql service
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_scheduler#new-features-of-scheduler-version-ga</field><field name="content">
+ new feature scheduler 8.0 ga section list new feature denodo scheduler 8.0
+ read new feature late update new denodo 8.0 update 8.0u20220815
+ user interface user interface user interface scheduler revamp cohesive application denodo platform
+ new feature scheduler version ga
+ </field></doc><doc><field name="topic">
+ https://community.denodo.com/docs/html/browse/8.0/en/platform/new_features/new_features_scheduler#user-interface</field><field name="content">
+ user interface user interface scheduler revamp cohesive application denodo platform
+ user interface
+ </field>
+ </doc>
+</add>
+
